@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Selectors</title>
+
+	<style>
+		p {
+			font-size: 20px;
+			color: blue;
+		}
+
+		h1 {
+			font-size: 36px;
+			font-weight: bold;
+		}
+
+		h2 {
+			font-size: 28px;
+			font-style: italic;
+		}
+
+		.highlight {
+			font-size: 22px;
+			background-color: yellow;
+		}
+
+		#important {
+			font-size: 20px;
+			background-color: palevioletred;
+			font-weight: bold;
+			font-style: italic;
+		}
+
+		li {
+			font-size: 18px;
+		}
+
+		h3 {
+			font-size: 24px;
+			text-decoration: underline;
+		}
+
+		.example {
+			font-size: 20px;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Rules</h1>
+	<p>
+		CSS rules are defined in the style tags. Each rule defines at least one selector. New classes and ID selectors can be created by using the . or # respectively.
+	</p>
+	<span class="highlight">ID selectors are more for specific instances and only used once while classes can be used generically.</span><br><br>
+
+	<a id="important">To be more efficient, you can also list multiple selectors in one rule.</a>
+
+	<h2>Combining Selectors</h2>
+
+	<p>
+		By combining selectors, you can choose to change the styling of a particular element with a certain attribute. You can combine:
+		<ul>
+			<li>element with class selector: p.big{...}</li>
+			<li>child selector: article &gt; p {...}</li>
+			<li>descendant selector: article p {...}</li>
+		</ul>
+	</p>
+
+	<h2>Pseudo-Class Selectors</h2>
+
+	<h3>:link, :visted, :hover, :active, and :nth-child</h3>
+
+	<ul>
+		<li>:linked - the way it is linked</li>
+		<li>:visited - how the link looks after it is visited</li>
+		<li>:hover - when a user hovers over it</li>
+		<li>:active - when the user clicks on element but hasn't released the button</li>
+		<li>:nth-child(n/odd/even) - targets nth (or odd/even) element in the list</li>
+	</ul>
+
+	<a class="highlight">
+		Usually groups a:link and a:visited together
+	</a>
+
+	<p class="example">
+		a:link, a:visited {<br>
+			&emsp;text-decoration: none;<br>
+			&emsp;background-color: green;<br>
+			&emsp;border: 1px solid blue;<br>
+			&emsp;color: black;<br>
+			&emsp;display: block;<br>
+			&emsp;width: 200px;<br>
+			&emsp;text-align: center;<br>
+			&emsp;margin-bottom: 1px;<br>
+		}<br><br>
+
+		a:hover, a:active{<br>
+			&emsp;background-color: red;<br>
+			&emsp;color: purple;<br>
+		}<br><br>
+
+		header li:nth-child(3) {<br>
+			&emsp;font-size:24px;<br>
+		}<br><br>
+
+		section div:nth-child(odd) {<br>
+			&emsp;background-color:gray;<br>
+		}
+	</p>
+</body>
+</html>
