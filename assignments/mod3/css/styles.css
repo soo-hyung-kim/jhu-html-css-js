@@ -1,0 +1,78 @@
+body {
+	background-color: #ffffff;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+}
+
+#navbar-fluid {
+	padding: 0;
+	border-bottom: 2px solid black;
+}
+
+#navbar-container {
+	margin: 10px;
+}
+
+#navbar-head-header {
+	margin: auto;
+	width: 100%;
+}
+
+#navbar-header {
+	background-color: #888888;
+	padding: 0;
+}
+
+
+.navbar {
+	padding: 0;
+}
+
+.navbar-brand, .navbar-brand:visited, .navbar-brand:hover, .navbar-brand:active {
+	color: #000000;
+	padding: 0;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.navbar-toggler {
+	float: right;
+}
+
+.navbar-toggler:collapse {
+	color: #394085;
+}
+
+.navbar-item {
+	background-color: #cccccc;
+	color: #000000;
+	border-top: 2px solid black;
+	text-align: center;
+	font-size: 18px;
+}
+
+#our-menu {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 0;
+}
+
+#menu-item {
+	font-size: 18px;
+	background-color: #888888;
+}
+
+#chicken {
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+#chicken-info {
+	padding: 15px;
+}
